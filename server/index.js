@@ -28,13 +28,19 @@ async function run() {
   try {
     const productCollection = client.db("nurseryDB").collection("Products"); 
     const categoryCollection = client.db("nurseryDB").collection("Categories"); 
+    const reviewsCollection = client.db("nurseryDB").collection('Reviews')
        
     // get all categories data from db
        app.get("/categories",async (req, res) => {
         const result = await categoryCollection.find().toArray();
         res.send(result);
     })
-    
+    // get review section
+    app.get("/reviews",async (req, res) => {
+      const result = await reviewsCollection.find().toArray();
+      res.send(result);
+  })
+
     // get all products data from db
     app.get("/products/category/:category",async (req, res) => {
       const category = req.params.category;
@@ -42,9 +48,10 @@ async function run() {
         res.send(result);
     })
 
+
     app.get('/products/:id', async (req, res) => {
       const productId = req.params.id;
-      const query = { _id: new ObjectId(id) };
+      const query = { _id: new ObjectId(productId) };
       const product = await productCollection.findOne(query)
       if (!product) {
         return res.status(404).message({ message: 'Product not found' });
@@ -63,8 +70,6 @@ async function run() {
   }
 }
 run().catch(console.dir);
-
-
 
 app.get('/', (req, res) => {
   res.send('Hello From Nursery!')

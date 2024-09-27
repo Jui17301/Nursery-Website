@@ -1,9 +1,11 @@
 import { createBrowserRouter } from "react-router-dom"
 import ErrorPage from "../pages/ErrorPage";
 import Main from "../layouts/Main";;
-import { CategoryList } from "../pages/CategoryList";
+import  CategoryList  from "../pages/CategoryList";
 import { ProductList } from "../pages/ProductList";
 import ProductDetails from "../pages/ProductDetails";
+import Reviews from "../pages/Reviews";
+import Home from "../pages/Home";
 
 export const Router = createBrowserRouter([
   {
@@ -12,17 +14,26 @@ export const Router = createBrowserRouter([
   errorElement: <ErrorPage />,
   children: [
     {
-      path: '/',
-      element:<CategoryList />,
+     path:'/',
+     element:<Home/>
     },
-    {
+    // {
+      // path: '/categoryList',
+      // index:true,
+      // element:<CategoryList />,
+    // },
+    {      
       path:'/category/:category',
       element:<ProductList/>
     },
     {
       path:'/product/:id',
       element:<ProductDetails/>
-    }
+    },
+    // {
+    //   path:'reviews',
+    //   element:<Reviews/>
+    // }
   ]
 }
 ]);

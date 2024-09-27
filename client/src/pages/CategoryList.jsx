@@ -9,10 +9,9 @@ export const fetchCategories = async () => {
   const { data } = await axios.get('http://localhost:3000/categories');
   console.log(data)
   return data;
- 
 };
 
-export const CategoryList = () => {
+ const CategoryList = () => {
   const { data: categories, isLoading, error } = useQuery({
     queryKey:['categories'],
     queryFn: fetchCategories
@@ -37,3 +36,4 @@ export const CategoryList = () => {
     </div>
   );
 };
+export default CategoryList;

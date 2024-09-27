@@ -1,0 +1,38 @@
+/* Container for the review card */
+.review-container {
+  position: relative;
+  width: 250px;
+  margin: 0 auto;
+}
+
+/* Styling for the image */
+.review-image {
+  width: 100%;
+  height: auto;
+  border-radius: 15px;
+  display: block;
+}
+
+/* Container for the comment overlay */
+.comment-overlay {
+  position: absolute;
+  bottom: 0; 
+  left: 0;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black background */
+  color: white;
+  padding: 10px;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  text-align: center;
+  font-size: 14px;
+  line-height: 1.5;
+  font-style: italic;
+  z-index: 1;
+}
+
+/* Optional: hover effect on image */
+.review-container:hover .comment-overlay {
+  background-color: rgba(0, 0, 0, 0.7); /* Darkens background on hover */
+  transition: background-color 0.3s ease;
+}

@@ -7,6 +7,7 @@ const Main = () => {
       <Outlet></Outlet>
     </div>
   )
+  
 }
 
 export default Main

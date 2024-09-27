@@ -1,0 +1,72 @@
+[
+  {
+    "img": "https://example.com/image1.jpg",
+    "title": "Fiddle Leaf Fig",
+    "name": "JohnDoe",
+    "comment": "A stunning plant, it brightens up my living room!",
+    "rating": 4.7
+  },
+  {
+    "img": "https://example.com/image2.jpg",
+    "title": "Snake Plant",
+    "name": "JaneSmith",
+    "comment": "Super easy to care for, perfect for beginners.",
+    "rating": 4.9
+  },
+  {
+    "img": "https://example.com/image3.jpg",
+    "title": "Monstera",
+    "name": "AliceJones",
+    "comment": "The leaves have such unique patterns!",
+    "rating": 4.8
+  },
+  {
+    "img": "https://example.com/image4.jpg",
+    "title": "Aloe Vera",
+    "name": "BobBrown",
+    "comment": "A must-have for its medicinal uses!",
+    "rating": 4.6
+  },
+  {
+    "img": "https://example.com/image5.jpg",
+    "title": "Peace Lily",
+    "name": "MichaelTaylor",
+    "comment": "It purifies the air and looks elegant.",
+    "rating": 4.7
+  },
+  {
+    "img": "https://example.com/image6.jpg",
+    "title": "Spider Plant",
+    "name": "SarahWilliams",
+    "comment": "Great for hanging baskets, grows fast!",
+    "rating": 4.5
+  },
+  {
+    "img": "https://example.com/image7.jpg",
+    "title": "Cactus",
+    "name": "ChrisMiller",
+    "comment": "Very low maintenance, ideal for my busy schedule.",
+    "rating": 4.9
+  },
+  {
+    "img": "https://example.com/image8.jpg",
+    "title": "Bamboo Plant",
+    "name": "EmilyWilson",
+    "comment": "Brings good luck and is easy to grow.",
+    "rating": 4.8
+  },
+  {
+    "img": "https://example.com/image9.jpg",
+    "title": "Succulent",
+    "name": "DavidLee",
+    "comment": "Looks cute on my desk, needs little water.",
+    "rating": 4.6
+  },
+  {
+    "img": "https://example.com/image10.jpg",
+    "title": "Rubber Plant",
+    "name": "OliviaClark",
+    "comment": "Its large, glossy leaves are impressive.",
+    "rating": 4.7
+  }
+]
